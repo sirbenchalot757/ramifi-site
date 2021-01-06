@@ -6191,6 +6191,7 @@ body.menu-active .modal-backdrop {
 }
 .section--team .team-item {
   position: relative;
+  margin-top: 50px;
 }
 .section--team .team-item img {
   left: 0;
@@ -6198,6 +6199,7 @@ body.menu-active .modal-backdrop {
   height: 100px;
   border-radius: 50%;
   border: 2px solid #659cc8;
+  margin-bottom: 20px;
 }
 @media (min-width: 1101px){
   .section--team .team-item img {
@@ -6482,13 +6484,14 @@ body.menu-active .modal-backdrop {
     }
   }
 }
-.team-item {
-  display: grid;
-  grid-template-columns: 108px 1fr;
-  grid-gap: 15px;
-  margin-top: 50px;
+@media (min-width: 1101px) {
+  .team-item {
+    display: grid;
+    grid-template-columns: 108px 1fr;
+    grid-gap: 15px;
+    margin-top: 50px;
+  }
 }
-
 .newsletter h3 {
 text-align: center;
 }
