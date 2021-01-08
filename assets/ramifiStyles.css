@@ -5873,7 +5873,28 @@ body.menu-active .modal-backdrop {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
   transition: filter 2s;
 }
-
+@media (min-width: 1100px) {
+  .donut-chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-gap: 50px;
+  }
+}
+@media (max-width: 1100px) {
+  .donut-chart {
+    grid-area: top;
+  }
+  .chart-items-1 {
+    grid-area: bottom;
+  }
+  .donut-chart-grid {
+    display: grid;
+    grid-template-areas:
+      "top"
+      "bottom";
+    grid-gap: 0px;
+  }
+}
 .donutChart {
   margin-top: 1em;
   margin-bottom: 5em;
@@ -6150,7 +6171,6 @@ body.menu-active .modal-backdrop {
 }
 .section--features .chart-item {
   position: relative;
-  padding-left: 10px;
   font-size: 14px;
 }
 .section--features .features-item .fas {
@@ -6181,6 +6201,50 @@ body.menu-active .modal-backdrop {
 }
 .section--features p {
   margin: 0;
+}
+.content {
+  display: none;
+  overflow: hidden;
+  padding-top: 15px;
+}
+.active,
+.collapsible:hover {
+  background-color: #3d3a3a;
+}
+.collapsible {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  grid-gap: 1em;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.collapsible i {
+  margin: 5px;
+  font-size: 24px;
+}
+.chart-items-1 .chart-item:nth-child(1) i {
+  color: #78af9f;
+  border-color: #78af9f;
+}
+.chart-items-1 .chart-item:nth-child(2) i {
+  color: #dda032;
+  border-color: #dda032;
+}
+.chart-items-1 .chart-item:nth-child(3) i {
+  color: #659cc8;
+  border-color: #659cc8;
+}
+.chart-items-1 .chart-item:nth-child(4) i {
+  color: #ffd152;
+  border-color: #ffd152;
+}
+.chart-items-1 .chart-item:nth-child(5) i {
+  color: #d46e2d;
+  border-color: #d46e2d;
+}
+.chart-items-1 .chart-item:nth-child(6) i {
+  color: #61efce;
+  border-color: #61efce;
 }
 
 .section--team h3 {
@@ -6501,15 +6565,15 @@ body.menu-active .modal-backdrop {
     }
   }
 }
+.chart-item {
+  margin-bottom: 15px;
+}
 @media (min-width: 1101px) {
   @supports (display: grid) {
     .welcome .chart-items {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 40px 66.6666666667px;
-    }
-    .welcome .chart-items {
-      margin-top: 0;
     }
   }
 }
