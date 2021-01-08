@@ -12,43 +12,43 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript">
-      window.NREUM || (NREUM = {})
+      window.NREUM || (NREUM = {});
       NREUM.info = {
-        beacon: 'bam.nr-data.net',
-        errorBeacon: 'bam.nr-data.net',
-        licenseKey: '844a840367',
-        applicationID: '13323906',
-        transactionName: 'c1cMREAKXVRcRhpCVlxbDV1XSlhWXVFN',
+        beacon: "bam.nr-data.net",
+        errorBeacon: "bam.nr-data.net",
+        licenseKey: "844a840367",
+        applicationID: "13323906",
+        transactionName: "c1cMREAKXVRcRhpCVlxbDV1XSlhWXVFN",
         queueTime: 2,
         applicationTime: 23,
-        agent: '',
-      }
+        agent: "",
+      };
     </script>
     <script type="text/javascript">
-      ;(window.NREUM || (NREUM = {})).loader_config = {
-        licenseKey: '844a840367',
-        applicationID: '13323906',
-      }
+      (window.NREUM || (NREUM = {})).loader_config = {
+        licenseKey: "844a840367",
+        applicationID: "13323906",
+      };
       window.NREUM || (NREUM = {}),
         (__nr_require = (function (e, t, n) {
           function r(n) {
             if (!t[n]) {
-              var i = (t[n] = { exports: {} })
+              var i = (t[n] = { exports: {} });
               e[n][0].call(
                 i.exports,
                 function (t) {
-                  var i = e[n][1][t]
-                  return r(i || t)
+                  var i = e[n][1][t];
+                  return r(i || t);
                 },
                 i,
-                i.exports,
-              )
+                i.exports
+              );
             }
-            return t[n].exports
+            return t[n].exports;
           }
-          if ('function' == typeof __nr_require) return __nr_require
-          for (var i = 0; i < n.length; i++) r(n[i])
-          return r
+          if ("function" == typeof __nr_require) return __nr_require;
+          for (var i = 0; i < n.length; i++) r(n[i]);
+          return r;
         })(
           {
             1: [
@@ -59,75 +59,77 @@
                     return (
                       o(e, [u.now()].concat(c(arguments)), t ? null : this, n),
                       t ? void 0 : this
-                    )
-                  }
+                    );
+                  };
                 }
-                var o = e('handle'),
+                var o = e("handle"),
                   a = e(6),
                   c = e(7),
-                  f = e('ee').get('tracer'),
-                  u = e('loader'),
-                  s = NREUM
-                'undefined' == typeof window.newrelic && (newrelic = s)
+                  f = e("ee").get("tracer"),
+                  u = e("loader"),
+                  s = NREUM;
+                "undefined" == typeof window.newrelic && (newrelic = s);
                 var d = [
-                    'setPageViewName',
-                    'setCustomAttribute',
-                    'setErrorHandler',
-                    'finished',
-                    'addToTrace',
-                    'inlineHit',
-                    'addRelease',
+                    "setPageViewName",
+                    "setCustomAttribute",
+                    "setErrorHandler",
+                    "finished",
+                    "addToTrace",
+                    "inlineHit",
+                    "addRelease",
                   ],
-                  p = 'api-',
-                  l = p + 'ixn-'
+                  p = "api-",
+                  l = p + "ixn-";
                 a(d, function (e, t) {
-                  s[t] = i(p + t, !0, 'api')
+                  s[t] = i(p + t, !0, "api");
                 }),
-                  (s.addPageAction = i(p + 'addPageAction', !0)),
-                  (s.setCurrentRouteName = i(p + 'routeName', !0)),
+                  (s.addPageAction = i(p + "addPageAction", !0)),
+                  (s.setCurrentRouteName = i(p + "routeName", !0)),
                   (t.exports = newrelic),
                   (s.interaction = function () {
-                    return new r().get()
-                  })
+                    return new r().get();
+                  });
                 var m = (r.prototype = {
                   createTracer: function (e, t) {
                     var n = {},
                       r = this,
-                      i = 'function' == typeof t
+                      i = "function" == typeof t;
                     return (
-                      o(l + 'tracer', [u.now(), e, n], r),
+                      o(l + "tracer", [u.now(), e, n], r),
                       function () {
                         if (
                           (f.emit(
-                            (i ? '' : 'no-') + 'fn-start',
+                            (i ? "" : "no-") + "fn-start",
                             [u.now(), r, i],
-                            n,
+                            n
                           ),
                           i)
                         )
                           try {
-                            return t.apply(this, arguments)
+                            return t.apply(this, arguments);
                           } catch (e) {
-                            throw (f.emit('fn-err', [arguments, this, e], n), e)
+                            throw (
+                              (f.emit("fn-err", [arguments, this, e], n), e)
+                            );
                           } finally {
-                            f.emit('fn-end', [u.now()], n)
+                            f.emit("fn-end", [u.now()], n);
                           }
                       }
-                    )
+                    );
                   },
-                })
+                });
                 a(
-                  'actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get'.split(
-                    ',',
+                  "actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(
+                    ","
                   ),
                   function (e, t) {
-                    m[t] = i(l + t)
-                  },
+                    m[t] = i(l + t);
+                  }
                 ),
                   (newrelic.noticeError = function (e, t) {
-                    'string' == typeof e && (e = new Error(e)),
-                      o('err', [e, u.now(), !1, t])
-                  })
+                    "string" == typeof e && (e = new Error(e)),
+                      o("err", [e, u.now(), !1, t]);
+                  });
               },
               {},
             ],
@@ -136,102 +138,102 @@
                 function r() {
                   return c.exists && performance.now
                     ? Math.round(performance.now())
-                    : (o = Math.max(new Date().getTime(), o)) - a
+                    : (o = Math.max(new Date().getTime(), o)) - a;
                 }
                 function i() {
-                  return o
+                  return o;
                 }
                 var o = new Date().getTime(),
                   a = o,
-                  c = e(8)
-                ;(t.exports = r),
+                  c = e(8);
+                (t.exports = r),
                   (t.exports.offset = a),
-                  (t.exports.getLastTimestamp = i)
+                  (t.exports.getLastTimestamp = i);
               },
               {},
             ],
             3: [
               function (e, t, n) {
                 function r(e, t) {
-                  var n = e.getEntries()
+                  var n = e.getEntries();
                   n.forEach(function (e) {
-                    'first-paint' === e.name
-                      ? d('timing', ['fp', Math.floor(e.startTime)])
-                      : 'first-contentful-paint' === e.name &&
-                        d('timing', ['fcp', Math.floor(e.startTime)])
-                  })
+                    "first-paint" === e.name
+                      ? d("timing", ["fp", Math.floor(e.startTime)])
+                      : "first-contentful-paint" === e.name &&
+                        d("timing", ["fcp", Math.floor(e.startTime)]);
+                  });
                 }
                 function i(e, t) {
-                  var n = e.getEntries()
-                  n.length > 0 && d('lcp', [n[n.length - 1]])
+                  var n = e.getEntries();
+                  n.length > 0 && d("lcp", [n[n.length - 1]]);
                 }
                 function o(e) {
                   e.getEntries().forEach(function (e) {
-                    e.hadRecentInput || d('cls', [e])
-                  })
+                    e.hadRecentInput || d("cls", [e]);
+                  });
                 }
                 function a(e) {
                   if (e instanceof m && !g) {
                     var t = Math.round(e.timeStamp),
-                      n = { type: e.type }
+                      n = { type: e.type };
                     t <= p.now()
                       ? (n.fid = p.now() - t)
                       : t > p.offset && t <= Date.now()
                       ? ((t -= p.offset), (n.fid = p.now() - t))
                       : (t = p.now()),
                       (g = !0),
-                      d('timing', ['fi', t, n])
+                      d("timing", ["fi", t, n]);
                   }
                 }
                 function c(e) {
-                  d('pageHide', [p.now(), e])
+                  d("pageHide", [p.now(), e]);
                 }
                 if (
                   !(
-                    'init' in NREUM &&
-                    'page_view_timing' in NREUM.init &&
-                    'enabled' in NREUM.init.page_view_timing &&
+                    "init" in NREUM &&
+                    "page_view_timing" in NREUM.init &&
+                    "enabled" in NREUM.init.page_view_timing &&
                     NREUM.init.page_view_timing.enabled === !1
                   )
                 ) {
                   var f,
                     u,
                     s,
-                    d = e('handle'),
-                    p = e('loader'),
+                    d = e("handle"),
+                    p = e("loader"),
                     l = e(5),
-                    m = NREUM.o.EV
+                    m = NREUM.o.EV;
                   if (
-                    'PerformanceObserver' in window &&
-                    'function' == typeof window.PerformanceObserver
+                    "PerformanceObserver" in window &&
+                    "function" == typeof window.PerformanceObserver
                   ) {
-                    f = new PerformanceObserver(r)
+                    f = new PerformanceObserver(r);
                     try {
-                      f.observe({ entryTypes: ['paint'] })
+                      f.observe({ entryTypes: ["paint"] });
                     } catch (v) {}
-                    u = new PerformanceObserver(i)
+                    u = new PerformanceObserver(i);
                     try {
-                      u.observe({ entryTypes: ['largest-contentful-paint'] })
+                      u.observe({ entryTypes: ["largest-contentful-paint"] });
                     } catch (v) {}
-                    s = new PerformanceObserver(o)
+                    s = new PerformanceObserver(o);
                     try {
-                      s.observe({ type: 'layout-shift', buffered: !0 })
+                      s.observe({ type: "layout-shift", buffered: !0 });
                     } catch (v) {}
                   }
-                  if ('addEventListener' in document) {
+                  if ("addEventListener" in document) {
                     var g = !1,
                       y = [
-                        'click',
-                        'keydown',
-                        'mousedown',
-                        'pointerdown',
-                        'touchstart',
-                      ]
+                        "click",
+                        "keydown",
+                        "mousedown",
+                        "pointerdown",
+                        "touchstart",
+                      ];
                     y.forEach(function (e) {
-                      document.addEventListener(e, a, !1)
-                    })
+                      document.addEventListener(e, a, !1);
+                    });
                   }
-                  l(c)
+                  l(c);
                 }
               },
               {},
@@ -239,30 +241,30 @@
             4: [
               function (e, t, n) {
                 function r(e, t) {
-                  if (!i) return !1
-                  if (e !== i) return !1
-                  if (!t) return !0
-                  if (!o) return !1
+                  if (!i) return !1;
+                  if (e !== i) return !1;
+                  if (!t) return !0;
+                  if (!o) return !1;
                   for (
-                    var n = o.split('.'), r = t.split('.'), a = 0;
+                    var n = o.split("."), r = t.split("."), a = 0;
                     a < r.length;
                     a++
                   )
-                    if (r[a] !== n[a]) return !1
-                  return !0
+                    if (r[a] !== n[a]) return !1;
+                  return !0;
                 }
                 var i = null,
                   o = null,
-                  a = /Version\/(\S+)\s+Safari/
+                  a = /Version\/(\S+)\s+Safari/;
                 if (navigator.userAgent) {
                   var c = navigator.userAgent,
-                    f = c.match(a)
+                    f = c.match(a);
                   f &&
-                    c.indexOf('Chrome') === -1 &&
-                    c.indexOf('Chromium') === -1 &&
-                    ((i = 'Safari'), (o = f[1]))
+                    c.indexOf("Chrome") === -1 &&
+                    c.indexOf("Chromium") === -1 &&
+                    ((i = "Safari"), (o = f[1]));
                 }
-                t.exports = { agent: i, version: o, match: r }
+                t.exports = { agent: i, version: o, match: r };
               },
               {},
             ],
@@ -274,26 +276,26 @@
                       a && document[a]
                         ? document[a]
                         : document[i]
-                        ? 'hidden'
-                        : 'visible',
-                    )
+                        ? "hidden"
+                        : "visible"
+                    );
                   }
-                  'addEventListener' in document &&
+                  "addEventListener" in document &&
                     o &&
-                    document.addEventListener(o, t, !1)
+                    document.addEventListener(o, t, !1);
                 }
-                t.exports = r
-                var i, o, a
-                'undefined' != typeof document.hidden
-                  ? ((i = 'hidden'),
-                    (o = 'visibilitychange'),
-                    (a = 'visibilityState'))
-                  : 'undefined' != typeof document.msHidden
-                  ? ((i = 'msHidden'), (o = 'msvisibilitychange'))
-                  : 'undefined' != typeof document.webkitHidden &&
-                    ((i = 'webkitHidden'),
-                    (o = 'webkitvisibilitychange'),
-                    (a = 'webkitVisibilityState'))
+                t.exports = r;
+                var i, o, a;
+                "undefined" != typeof document.hidden
+                  ? ((i = "hidden"),
+                    (o = "visibilitychange"),
+                    (a = "visibilityState"))
+                  : "undefined" != typeof document.msHidden
+                  ? ((i = "msHidden"), (o = "msvisibilitychange"))
+                  : "undefined" != typeof document.webkitHidden &&
+                    ((i = "webkitHidden"),
+                    (o = "webkitvisibilitychange"),
+                    (a = "webkitVisibilityState"));
               },
               {},
             ],
@@ -301,13 +303,13 @@
               function (e, t, n) {
                 function r(e, t) {
                   var n = [],
-                    r = '',
-                    o = 0
-                  for (r in e) i.call(e, r) && ((n[o] = t(r, e[r])), (o += 1))
-                  return n
+                    r = "",
+                    o = 0;
+                  for (r in e) i.call(e, r) && ((n[o] = t(r, e[r])), (o += 1));
+                  return n;
                 }
-                var i = Object.prototype.hasOwnProperty
-                t.exports = r
+                var i = Object.prototype.hasOwnProperty;
+                t.exports = r;
               },
               {},
             ],
@@ -315,16 +317,16 @@
               function (e, t, n) {
                 function r(e, t, n) {
                   t || (t = 0),
-                    'undefined' == typeof n && (n = e ? e.length : 0)
+                    "undefined" == typeof n && (n = e ? e.length : 0);
                   for (
                     var r = -1, i = n - t || 0, o = Array(i < 0 ? 0 : i);
                     ++r < i;
 
                   )
-                    o[r] = e[t + r]
-                  return o
+                    o[r] = e[t + r];
+                  return o;
                 }
-                t.exports = r
+                t.exports = r;
               },
               {},
             ],
@@ -332,11 +334,11 @@
               function (e, t, n) {
                 t.exports = {
                   exists:
-                    'undefined' != typeof window.performance &&
+                    "undefined" != typeof window.performance &&
                     window.performance.timing &&
-                    'undefined' !=
+                    "undefined" !=
                       typeof window.performance.timing.navigationStart,
-                }
+                };
               },
               {},
             ],
@@ -345,40 +347,40 @@
                 function r() {}
                 function i(e) {
                   function t(e) {
-                    return e && e instanceof r ? e : e ? f(e, c, o) : o()
+                    return e && e instanceof r ? e : e ? f(e, c, o) : o();
                   }
                   function n(n, r, i, o) {
                     if (!p.aborted || o) {
-                      e && e(n, r, i)
+                      e && e(n, r, i);
                       for (
                         var a = t(i), c = v(n), f = c.length, u = 0;
                         u < f;
                         u++
                       )
-                        c[u].apply(a, r)
-                      var d = s[w[n]]
-                      return d && d.push([b, n, r, a]), a
+                        c[u].apply(a, r);
+                      var d = s[w[n]];
+                      return d && d.push([b, n, r, a]), a;
                     }
                   }
                   function l(e, t) {
-                    h[e] = v(e).concat(t)
+                    h[e] = v(e).concat(t);
                   }
                   function m(e, t) {
-                    var n = h[e]
+                    var n = h[e];
                     if (n)
                       for (var r = 0; r < n.length; r++)
-                        n[r] === t && n.splice(r, 1)
+                        n[r] === t && n.splice(r, 1);
                   }
                   function v(e) {
-                    return h[e] || []
+                    return h[e] || [];
                   }
                   function g(e) {
-                    return (d[e] = d[e] || i(n))
+                    return (d[e] = d[e] || i(n));
                   }
                   function y(e, t) {
                     u(e, function (e, n) {
-                      ;(t = t || 'feature'), (w[n] = t), t in s || (s[t] = [])
-                    })
+                      (t = t || "feature"), (w[n] = t), t in s || (s[t] = []);
+                    });
                   }
                   var h = {},
                     w = {},
@@ -393,31 +395,31 @@
                       buffer: y,
                       abort: a,
                       aborted: !1,
-                    }
-                  return b
+                    };
+                  return b;
                 }
                 function o() {
-                  return new r()
+                  return new r();
                 }
                 function a() {
-                  ;(s.api || s.feature) &&
-                    ((p.aborted = !0), (s = p.backlog = {}))
+                  (s.api || s.feature) &&
+                    ((p.aborted = !0), (s = p.backlog = {}));
                 }
-                var c = 'nr@context',
-                  f = e('gos'),
+                var c = "nr@context",
+                  f = e("gos"),
                   u = e(6),
                   s = {},
                   d = {},
-                  p = (t.exports = i())
-                p.backlog = s
+                  p = (t.exports = i());
+                p.backlog = s;
               },
               {},
             ],
             gos: [
               function (e, t, n) {
                 function r(e, t, n) {
-                  if (i.call(e, t)) return e[t]
-                  var r = n()
+                  if (i.call(e, t)) return e[t];
+                  var r = n();
                   if (Object.defineProperty && Object.keys)
                     try {
                       return (
@@ -427,41 +429,41 @@
                           enumerable: !1,
                         }),
                         r
-                      )
+                      );
                     } catch (o) {}
-                  return (e[t] = r), r
+                  return (e[t] = r), r;
                 }
-                var i = Object.prototype.hasOwnProperty
-                t.exports = r
+                var i = Object.prototype.hasOwnProperty;
+                t.exports = r;
               },
               {},
             ],
             handle: [
               function (e, t, n) {
                 function r(e, t, n, r) {
-                  i.buffer([e], r), i.emit(e, t, n)
+                  i.buffer([e], r), i.emit(e, t, n);
                 }
-                var i = e('ee').get('handle')
-                ;(t.exports = r), (r.ee = i)
+                var i = e("ee").get("handle");
+                (t.exports = r), (r.ee = i);
               },
               {},
             ],
             id: [
               function (e, t, n) {
                 function r(e) {
-                  var t = typeof e
-                  return !e || ('object' !== t && 'function' !== t)
+                  var t = typeof e;
+                  return !e || ("object" !== t && "function" !== t)
                     ? -1
                     : e === window
                     ? 0
                     : a(e, o, function () {
-                        return i++
-                      })
+                        return i++;
+                      });
                 }
                 var i = 1,
-                  o = 'nr@id',
-                  a = e('gos')
-                t.exports = r
+                  o = "nr@id",
+                  a = e("gos");
+                t.exports = r;
               },
               {},
             ],
@@ -470,40 +472,40 @@
                 function r() {
                   if (!E++) {
                     var e = (b.info = NREUM.info),
-                      t = p.getElementsByTagName('script')[0]
+                      t = p.getElementsByTagName("script")[0];
                     if (
                       (setTimeout(u.abort, 3e4),
                       !(e && e.licenseKey && e.applicationID && t))
                     )
-                      return u.abort()
+                      return u.abort();
                     f(h, function (t, n) {
-                      e[t] || (e[t] = n)
-                    })
-                    var n = a()
-                    c('mark', ['onload', n + b.offset], null, 'api'),
-                      c('timing', ['load', n])
-                    var r = p.createElement('script')
-                    ;(r.src = 'https://' + e.agent),
-                      t.parentNode.insertBefore(r, t)
+                      e[t] || (e[t] = n);
+                    });
+                    var n = a();
+                    c("mark", ["onload", n + b.offset], null, "api"),
+                      c("timing", ["load", n]);
+                    var r = p.createElement("script");
+                    (r.src = "https://" + e.agent),
+                      t.parentNode.insertBefore(r, t);
                   }
                 }
                 function i() {
-                  'complete' === p.readyState && o()
+                  "complete" === p.readyState && o();
                 }
                 function o() {
-                  c('mark', ['domContent', a() + b.offset], null, 'api')
+                  c("mark", ["domContent", a() + b.offset], null, "api");
                 }
                 var a = e(2),
-                  c = e('handle'),
+                  c = e("handle"),
                   f = e(6),
-                  u = e('ee'),
+                  u = e("ee"),
                   s = e(4),
                   d = window,
                   p = d.document,
-                  l = 'addEventListener',
-                  m = 'attachEvent',
+                  l = "addEventListener",
+                  m = "attachEvent",
                   v = d.XMLHttpRequest,
-                  g = v && v.prototype
+                  g = v && v.prototype;
                 NREUM.o = {
                   ST: setTimeout,
                   SI: d.setImmediate,
@@ -513,12 +515,12 @@
                   EV: d.Event,
                   PR: d.Promise,
                   MO: d.MutationObserver,
-                }
-                var y = '' + location,
+                };
+                var y = "" + location,
                   h = {
-                    beacon: 'bam.nr-data.net',
-                    errorBeacon: 'bam.nr-data.net',
-                    agent: 'js-agent.newrelic.com/nr-1184.min.js',
+                    beacon: "bam.nr-data.net",
+                    errorBeacon: "bam.nr-data.net",
+                    agent: "js-agent.newrelic.com/nr-1184.min.js",
                   },
                   w = v && g && g[l] && !/CriOS/.test(navigator.userAgent),
                   b = (t.exports = {
@@ -528,121 +530,122 @@
                     features: {},
                     xhrWrappable: w,
                     userAgent: s,
-                  })
+                  });
                 e(1),
                   e(3),
                   p[l]
-                    ? (p[l]('DOMContentLoaded', o, !1), d[l]('load', r, !1))
-                    : (p[m]('onreadystatechange', i), d[m]('onload', r)),
-                  c('mark', ['firstbyte', a.getLastTimestamp()], null, 'api')
-                var E = 0
+                    ? (p[l]("DOMContentLoaded", o, !1), d[l]("load", r, !1))
+                    : (p[m]("onreadystatechange", i), d[m]("onload", r)),
+                  c("mark", ["firstbyte", a.getLastTimestamp()], null, "api");
+                var E = 0;
               },
               {},
             ],
-            'wrap-function': [
+            "wrap-function": [
               function (e, t, n) {
                 function r(e) {
-                  return !(e && e instanceof Function && e.apply && !e[a])
+                  return !(e && e instanceof Function && e.apply && !e[a]);
                 }
-                var i = e('ee'),
+                var i = e("ee"),
                   o = e(7),
-                  a = 'nr@original',
+                  a = "nr@original",
                   c = Object.prototype.hasOwnProperty,
-                  f = !1
+                  f = !1;
                 t.exports = function (e, t) {
                   function n(e, t, n, i) {
                     function nrWrapper() {
-                      var r, a, c, f
+                      var r, a, c, f;
                       try {
-                        ;(a = this),
+                        (a = this),
                           (r = o(arguments)),
-                          (c = 'function' == typeof n ? n(r, a) : n || {})
+                          (c = "function" == typeof n ? n(r, a) : n || {});
                       } catch (u) {
-                        p([u, '', [r, a, i], c])
+                        p([u, "", [r, a, i], c]);
                       }
-                      s(t + 'start', [r, a, i], c)
+                      s(t + "start", [r, a, i], c);
                       try {
-                        return (f = e.apply(a, r))
+                        return (f = e.apply(a, r));
                       } catch (d) {
-                        throw (s(t + 'err', [r, a, d], c), d)
+                        throw (s(t + "err", [r, a, d], c), d);
                       } finally {
-                        s(t + 'end', [r, a, f], c)
+                        s(t + "end", [r, a, f], c);
                       }
                     }
                     return r(e)
                       ? e
-                      : (t || (t = ''),
+                      : (t || (t = ""),
                         (nrWrapper[a] = e),
                         d(e, nrWrapper),
-                        nrWrapper)
+                        nrWrapper);
                   }
                   function u(e, t, i, o) {
-                    i || (i = '')
+                    i || (i = "");
                     var a,
                       c,
                       f,
-                      u = '-' === i.charAt(0)
+                      u = "-" === i.charAt(0);
                     for (f = 0; f < t.length; f++)
                       (c = t[f]),
                         (a = e[c]),
-                        r(a) || (e[c] = n(a, u ? c + i : i, o, c))
+                        r(a) || (e[c] = n(a, u ? c + i : i, o, c));
                   }
                   function s(n, r, i) {
                     if (!f || t) {
-                      var o = f
-                      f = !0
+                      var o = f;
+                      f = !0;
                       try {
-                        e.emit(n, r, i, t)
+                        e.emit(n, r, i, t);
                       } catch (a) {
-                        p([a, n, r, i])
+                        p([a, n, r, i]);
                       }
-                      f = o
+                      f = o;
                     }
                   }
                   function d(e, t) {
                     if (Object.defineProperty && Object.keys)
                       try {
-                        var n = Object.keys(e)
+                        var n = Object.keys(e);
                         return (
                           n.forEach(function (n) {
                             Object.defineProperty(t, n, {
                               get: function () {
-                                return e[n]
+                                return e[n];
                               },
                               set: function (t) {
-                                return (e[n] = t), t
+                                return (e[n] = t), t;
                               },
-                            })
+                            });
                           }),
                           t
-                        )
+                        );
                       } catch (r) {
-                        p([r])
+                        p([r]);
                       }
-                    for (var i in e) c.call(e, i) && (t[i] = e[i])
-                    return t
+                    for (var i in e) c.call(e, i) && (t[i] = e[i]);
+                    return t;
                   }
                   function p(t) {
                     try {
-                      e.emit('internal-error', t)
+                      e.emit("internal-error", t);
                     } catch (n) {}
                   }
-                  return e || (e = i), (n.inPlace = u), (n.flag = a), n
-                }
+                  return e || (e = i), (n.inPlace = u), (n.flag = a), n;
+                };
               },
               {},
             ],
           },
           {},
-          ['loader'],
-        ))
+          ["loader"]
+        ));
     </script>
     <script>
-      function loadSignup(){
-        var signupForm = '<iframe src="https://cdn.forms-content.sg-form.com/24f33748-4f99-11eb-a496-22c66048055e"/>';
-        document.getElementById('signupForm').innerHTML = signupForm;
-        document.getElementById('signupForm-m').innerHTML = signupForm;
-        var x =12;
+      function loadSignup() {
+        var signupForm =
+          '<iframe src="https://cdn.forms-content.sg-form.com/24f33748-4f99-11eb-a496-22c66048055e"/>';
+        document.getElementById("signupForm").innerHTML = signupForm;
+        document.getElementById("signupForm-m").innerHTML = signupForm;
+        var x = 12;
       }
     </script>
 
@@ -660,35 +663,45 @@
     <meta property="og:url" content="https://ramifi.org/" />
     <meta property="og:site_name" content="Ramifi" />
     <meta property="og:type" content="website" />
-    <meta property="og:author" content="https://www.facebook.com/Ramifi-Protocol-102796428303550/" />
     <meta
-      property="og:image"
-      content="assets/graphics/Ram-logo.png"
+      property="og:author"
+      content="https://www.facebook.com/Ramifi-Protocol-102796428303550/"
     />
+    <meta property="og:image" content="assets/graphics/Ram-logo.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-
     <title>Ramifi - Solve USD Inflation and Purchasing Power</title>
-    <meta name="twitter:description" content="Ramifi is a decentralized finance token that aims to solve USD inflation and purchasing power through supply based crypto-economic innovation.">
-    <meta name="description" content="Ramifi is a decentralized finance token that aims to solve USD inflation and purchasing power through supply based crypto-economic innovation.">
-    <meta name="keywords" content="decentralized finance, USD inflation, cryptocurrency innovation, blockchain innovation">
-    <meta name="twitter:title" content="Ramifi - Solving USD Inflation ">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="assets/graphics/twitter-wallpaper-01.png">
+    <meta
+      name="twitter:description"
+      content="Ramifi is a decentralized finance token that aims to solve USD inflation and purchasing power through supply based crypto-economic innovation."
+    />
+    <meta
+      name="description"
+      content="Ramifi is a decentralized finance token that aims to solve USD inflation and purchasing power through supply based crypto-economic innovation."
+    />
+    <meta
+      name="keywords"
+      content="decentralized finance, USD inflation, cryptocurrency innovation, blockchain innovation"
+    />
+    <meta name="twitter:title" content="Ramifi - Solving USD Inflation " />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="assets/graphics/twitter-wallpaper-01.png"
+    />
     <meta property="twitter:site" content="@ramifiprotocol" />
-  
+
     <meta property="twitter:image:width" content="1200" />
     <meta property="twitter:image:height" content="630" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body onload="loadSignup()" class="is-responsive">
     <div class="footer-push">
@@ -753,12 +766,12 @@
                       <h4>Documentation</h4>
                     </a>
                   </li>
-                  <li style="display: none;">
+                  <li style="display: none">
                     <a
                       href="/download/mac"
                       class="welcome-button js-download-button"
                     >
-                      <span style="margin-right: 10px;">
+                      <span style="margin-right: 10px">
                         <i class="fas fa-exchange-alt"></i>
                       </span>
                       Private Sale
@@ -767,27 +780,42 @@
                 </ul>
 
                 <div class="fa-icons-ramifi-div">
-                  <a href="https://t.me/joinchat/HrkZwhvV9y1ifip6FHOpDw" class="fa-icons-ramifi">
+                  <a
+                    href="https://t.me/joinchat/HrkZwhvV9y1ifip6FHOpDw"
+                    class="fa-icons-ramifi"
+                  >
                     <span class="fa-icon-ramifi">
                       <i class="fab fa-telegram-plane"></i>
                     </span>
                   </a>
-                  <a href="https://twitter.com/RamifiProtocol" class="fa-icons-ramifi">
+                  <a
+                    href="https://twitter.com/RamifiProtocol"
+                    class="fa-icons-ramifi"
+                  >
                     <span class="fa-icon-ramifi">
                       <i class="fab fa-twitter"></i>
                     </span>
                   </a>
-                  <a href="https://www.reddit.com/r/RamToken" class="fa-icons-ramifi">
+                  <a
+                    href="https://www.reddit.com/r/RamToken"
+                    class="fa-icons-ramifi"
+                  >
                     <span class="fa-icon-ramifi">
                       <i class="fab fa-reddit-alien"></i>
                     </span>
                   </a>
-                  <a href="https://www.facebook.com/Ramifi-102796428303550" class="fa-icons-ramifi">
+                  <a
+                    href="https://www.facebook.com/Ramifi-102796428303550"
+                    class="fa-icons-ramifi"
+                  >
                     <span class="fa-icon-ramifi">
                       <i class="fab fa-facebook-f"></i>
                     </span>
                   </a>
-                  <a href="https://discord.gg/dX84vWdB2a" class="fa-icons-ramifi">
+                  <a
+                    href="https://discord.gg/dX84vWdB2a"
+                    class="fa-icons-ramifi"
+                  >
                     <span class="fa-icon-ramifi">
                       <i class="fab fa-discord"></i>
                     </span>
@@ -797,7 +825,7 @@
 
               <div class="hero-features">
                 <h1 class="hero-tagline">
-                  <span style="color: #78af9f;">Inflation Immune</span>
+                  <span style="color: #78af9f">Inflation Immune</span>
                   Dynamic Money
                 </h1>
               </div>
@@ -809,11 +837,12 @@
               <h3>A Peg to the Natural</h3>
 
               <p>
-                The US dollar is constantly inflating and losing value. Stable coins suffer the same problems
-                because of this fact. The Ramifi Protocol has solved this by creating a floating peg that adjusts
-                along side commodity prices across the globe. As the prices of the most basic things we buy
-                go up, so does the RAM token. The goal being the removal of the need for the USD.
-
+                The US dollar is constantly inflating and losing value. Stable
+                coins suffer the same problems because of this fact. The Ramifi
+                Protocol has solved this by creating a floating peg that adjusts
+                along side commodity prices across the globe. As the prices of
+                the most basic things we buy go up, so does the RAM token. The
+                goal being the removal of the need for the USD.
               </p>
 
               <div class="welcome-bgs">
@@ -824,14 +853,13 @@
               </div>
 
               <p>
-                These commodities are weighted by volume then averaged together to create a factor which is used to adjust the peg 
-                on a regular basis.
+                These commodities are weighted by volume then averaged together
+                to create a factor which is used to adjust the peg on a regular
+                basis.
               </p>
 
-              <p style="display: none"class="welcome-cta">
-                <a href="" class="welcome-button">
-                  Learn more
-                </a>
+              <p style="display: none" class="welcome-cta">
+                <a href="" class="welcome-button"> Learn more </a>
               </p>
             </div>
           </section>
@@ -841,11 +869,12 @@
               <h3>Supply Based Stability</h3>
 
               <p>
-                The Ramifi Protocol recalculates its total supply daily in order to maintain
-                its' commodity based peg. Leveraging the fact that supply and demand dictate
-                the price of the asset, we are able to maintain a peg while simulataneously
-                creating a robust market. This makes the Ramifi ecosystem infinitely scalable without
-                the need for USD backing.
+                The Ramifi Protocol recalculates its total supply daily in order
+                to maintain its' commodity based peg. Leveraging the fact that
+                supply and demand dictate the price of the asset, we are able to
+                maintain a peg while simulataneously creating a robust market.
+                This makes the Ramifi ecosystem infinitely scalable without the
+                need for USD backing.
               </p>
 
               <div class="welcome-bgs">
@@ -856,15 +885,14 @@
               </div>
 
               <p>
-                When you invest in the Ramifi ecosystem, your percentage ownership in the network
-                never changes even when the price does. When the protocol increases in size, instead of
-                the RAM token increasing in value, the amount of RAM in your wallet grows.
+                When you invest in the Ramifi ecosystem, your percentage
+                ownership in the network never changes even when the price does.
+                When the protocol increases in size, instead of the RAM token
+                increasing in value, the amount of RAM in your wallet grows.
               </p>
 
               <p style="display: none" class="welcome-cta">
-                <a href="" class="welcome-button">
-                  Learn more
-                </a>
+                <a href="" class="welcome-button"> Learn more </a>
               </p>
             </div>
           </section>
@@ -917,84 +945,118 @@
               <h3>Tokenomics</h3>
               <div id="donutchart" class="donutChart"></div>
               <div class="chart-items">
-                <div
-                  class="chart-item"
-                  style="border-left: 10px solid #78af9f;"
-                >
-                  <h4 style="color: #78af9f;">Ecosystem</h4>
-                  <span style="color: #78af9f;">575,000 RAM</span>
-                  <p style="color: #78af9f;">
-                    This portion of RAM tokens will be allocated for ecosystem driven ventures, 
-                    and are locked for a period of 24 months. These tokens are released every 
-                    month at a rate of 4.16%. The tokens will be used for strictly community 
-                    and growth programs, such as partnerships and anything related to broadening 
-                    the protocols utility footprint within the space. 
+                <div class="chart-item" style="border-left: 10px solid #78af9f">
+                  <h4 style="color: #78af9f">Ecosystem</h4>
+                  <span style="color: #78af9f">575,000 RAM</span>
+                  <p style="color: #78af9f">
+                    This portion of RAM tokens will be allocated for ecosystem
+                    driven ventures, and are locked for a period of 24 months.
+                    These tokens are released every month at a rate of 4.16%.
+                    The tokens will be used for strictly community and growth
+                    programs, such as partnerships and anything related to
+                    broadening the protocols utility footprint within the space.
                   </p>
                 </div>
-                <div
-                  class="chart-item"
-                  style="border-left: 10px solid #dda032;"
-                >
-                  <h4 style="color: #dda032;">Ramifi Team & Advisors</h4>
-                  <span style="color: #dda032;">600,000 RAM</span>
-                  <p style="color: #dda032;">
-                    The tokens will be initially locked for 12 months, which will then be 
-                    released for 12 months at a rate of 8.33%. The purpose of this pool 
-                    is for both current and future employees of the foundation, aiding 
-                    internal operations and further project development. 16.67% of the 
-                    600,000 tokens will be dedicated to Advisors and those guiding the 
-                    project. Advisors will be subject to the same lock up period that the 
+                <div class="chart-item" style="border-left: 10px solid #dda032">
+                  <h4 style="color: #dda032">Ramifi Team & Advisors</h4>
+                  <span style="color: #dda032">600,000 RAM</span>
+                  <p style="color: #dda032">
+                    The tokens will be initially locked for 12 months, which
+                    will then be released for 12 months at a rate of 8.33%. The
+                    purpose of this pool is for both current and future
+                    employees of the foundation, aiding internal operations and
+                    further project development. 16.67% of the 600,000 tokens
+                    will be dedicated to Advisors and those guiding the project.
+                    Advisors will be subject to the same lock up period that the
                     team has agreed upon.
                   </p>
                 </div>
-                <div
-                  class="chart-item"
-                  style="border-left: 10px solid #659cc8;"
-                >
-                  <h4 style="color: #659cc8;">Treasury</h4>
-                  <span style="color: #659cc8;">550,000 RAM</span>
-                  <p style="color: #659cc8;">
-                    Ramifi will use this portion of tokens for its Treasury 
-                    which strictly focuses on maintaining both the protocol 
-                    and the Ramifi Foundation (Governance DAO). These tokens 
-                    will be locked for 12 months after listing, which will 
-                    then be released for 12 months every month at a rate of 
-                    8.33% to ensure full ecosystem maturity before distribution.
+                <div class="chart-item" style="border-left: 10px solid #659cc8">
+                  <h4 style="color: #659cc8">Treasury</h4>
+                  <span style="color: #659cc8">550,000 RAM</span>
+                  <p style="color: #659cc8">
+                    Ramifi will use this portion of tokens for its Treasury
+                    which strictly focuses on maintaining both the protocol and
+                    the Ramifi Foundation (Governance DAO). These tokens will be
+                    locked for 12 months after listing, which will then be
+                    released for 12 months every month at a rate of 8.33% to
+                    ensure full ecosystem maturity before distribution.
                   </p>
                 </div>
-                <div
-                  class="chart-item"
-                  style="border-left: 10px solid #ffd152;"
-                >
-                  <h4 style="color: #ffd152;">Seed Investors</h4>
-                  <span style="color: #ffd152;">400,000 RAM</span>
-                  <p style="color: #ffd152;">
-                    Seed investor tokens will be initially locked for 6 months, which will then be 
-                    released at a rate of 16.66%.
+                <div class="chart-item" style="border-left: 10px solid #ffd152">
+                  <h4 style="color: #ffd152">Seed Investors</h4>
+                  <span style="color: #ffd152">400,000 RAM</span>
+                  <p style="color: #ffd152">
+                    Seed investor tokens will be initially locked for 6 months,
+                    which will then be released at a rate of 16.66%.
                   </p>
                 </div>
-                <div
-                  class="chart-item"
-                  style="border-left: 10px solid #d46e2d;"
-                >
-                  <h4 style="color: #d46e2d;">Private Sale</h4>
-                  <span style="color: #d46e2d;">250,000 RAM</span>
-                  <p style="color: #d46e2d;">
-                    Private sale tokens will be released between 2 4, and 6 months after launch dependent
-                    upon options provided during the sale.
+                <div class="chart-item" style="border-left: 10px solid #d46e2d">
+                  <h4 style="color: #d46e2d">Private Sale</h4>
+                  <span style="color: #d46e2d">250,000 RAM</span>
+                  <p style="color: #d46e2d">
+                    Private sale tokens will be released between 2 4, and 6
+                    months after launch dependent upon options provided during
+                    the sale.
                   </p>
                 </div>
-                <div
-                  class="chart-item"
-                  style="border-left: 10px solid #61efce;"
-                >
-                  <h4 style="color: #61efce;">Public Sale</h4>
-                  <span style="color: #61efce;">125,000 RAM</span>
-                  <p style="color: #61efce;">
-                    Tokens sold during the public sale will be available for trading immediately.
+                <div class="chart-item" style="border-left: 10px solid #61efce">
+                  <h4 style="color: #61efce">Public Sale</h4>
+                  <span style="color: #61efce">125,000 RAM</span>
+                  <p style="color: #61efce">
+                    Tokens sold during the public sale will be available for
+                    trading immediately.
                   </p>
                 </div>
               </div>
+            </div>
+          </section>
+
+          <section class="section roadmap-section">
+            <div class="wrapper no-pad">
+              <ul class="roadmap">
+                <li>
+                  <span class="octicon octicon-code"></span>
+                  <span>10/15/20</span><br class="responsive-break" />
+                  <span>White paper</span>
+                </li>
+                <li></li>
+                <li>
+                  <span class="octicon octicon-code"></span>
+                  <span>10/15/20</span><br class="responsive-break" />
+                  <span>Testnet launch</span>
+                </li>
+                <li></li>
+                <li>
+                  <span class="octicon octicon-code"></span>
+                  <span>10/15/20</span><br class="responsive-break" />
+                  <span>Torrent testnet</span>
+                </li>
+                <li></li>
+                <li>
+                  <span class="octicon octicon-code"></span>
+                  <span>10/15/20</span><br class="responsive-break" />
+                  <span>Private sale</span>
+                </li>
+                <li></li>
+                <li>
+                  <span class="octicon octicon-code"></span>
+                  <span>10/15/20</span><br class="responsive-break" />
+                  <span>Torrent launch</span>
+                </li>
+                <li></li>
+                <li>
+                  <span class="octicon octicon-code"></span>
+                  <span>10/15/20</span><br class="responsive-break" />
+                  <span>Governance Implementation</span>
+                </li>
+                <li></li>
+                <li>
+                  <span class="octicon octicon-code"></span>
+                  <span>10/15/20</span><br class="responsive-break" />
+                  <span>Public Sale</span>
+                </li>
+              </ul>
             </div>
           </section>
 
@@ -1008,54 +1070,61 @@
                   <div>
                     <h4>Kyle Forkey</h4>
                     <p>
-                      Kyle Forkey is Ramifi's co-founder and lead smart contract developer.
-                      He has extensive experience in the cryptocurrency industry and is a 
-                      strong proponent of decentralized solutions. Kyle is also a founding 
-                      member of Ethmint, a financial organization that offers blockchain 
-                      and smart contract development services and consultation. While at 
-                      Ethmint, Kyle helped guide one of the first regulatory-compliant ICOs 
-                      in the United States. Amentum Capital, where Kyle is a General Partner, 
-                      is a crypto hedge fund for blockchain-based protocols and applications 
-                      that focuses on diversity, security, interoperability, and Sustainability.
+                      Kyle Forkey is Ramifi's co-founder and lead smart contract
+                      developer. He has extensive experience in the
+                      cryptocurrency industry and is a strong proponent of
+                      decentralized solutions. Kyle is also a founding member of
+                      Ethmint, a financial organization that offers blockchain
+                      and smart contract development services and consultation.
+                      While at Ethmint, Kyle helped guide one of the first
+                      regulatory-compliant ICOs in the United States. Amentum
+                      Capital, where Kyle is a General Partner, is a crypto
+                      hedge fund for blockchain-based protocols and applications
+                      that focuses on diversity, security, interoperability, and
+                      Sustainability.
                     </p>
                   </div>
                 </div>
                 <div class="team-item">
                   <img
-                    style="border: 2px solid #d46e2d;"
+                    style="border: 2px solid #d46e2d"
                     src="assets/graphics/kyleK-ramifi.jpg"
                   />
                   <div>
                     <h4>Kyle Kahlenberg</h4>
                     <p>
-                      Kyle Kahlenberg is Ramifi's Project Manager and Lead Marketing Expert, 
-                      handling both community outreach and investor relations. A University 
-                      of Texas graduate with a bachelor's in Sustainability, Kyle's background 
-                      has afforded him substantial real estate, land development, and project 
-                      management experience. Kyle additionally co-founded helius.us, an 
-                      innovative real estate investment platform that utilizes crowd-funding. 
-                      He is also the founder of Olias Capital LLC, an angel investment fund 
+                      Kyle Kahlenberg is Ramifi's Project Manager and Lead
+                      Marketing Expert, handling both community outreach and
+                      investor relations. A University of Texas graduate with a
+                      bachelor's in Sustainability, Kyle's background has
+                      afforded him substantial real estate, land development,
+                      and project management experience. Kyle additionally
+                      co-founded helius.us, an innovative real estate investment
+                      platform that utilizes crowd-funding. He is also the
+                      founder of Olias Capital LLC, an angel investment fund
                       which primarily focuses on Gen-Z based startups.
                     </p>
                   </div>
                 </div>
                 <div class="team-item">
                   <img
-                    style="border: 2px solid #61efce;"
+                    style="border: 2px solid #61efce"
                     src="assets/graphics/Ray-buckton.jpg"
                   />
                   <div>
-                    <h4>Ray Buckton </h4>
+                    <h4>Ray Buckton</h4>
                     <p>
-                      Ray Buckton is Ramifi’s Head of Content, overseeing the content 
-                      creation process, and general word-related activities. With experience 
-                      in retail banking and portfolio management, Ray’s foray into the 
-                      financial field began in 2014 after graduating with a bachelor’s degree 
-                      in history and political science. Ray co-founded Cryptide LLC, a 
-                      cryptocurrency education startup where he assisted in producing 
-                      educational content. He also co-founded HeavyZen LLC, a content 
-                      creation and management company that assists projects in content 
-                      creation, social media management, and SEO.
+                      Ray Buckton is Ramifi’s Head of Content, overseeing the
+                      content creation process, and general word-related
+                      activities. With experience in retail banking and
+                      portfolio management, Ray’s foray into the financial field
+                      began in 2014 after graduating with a bachelor’s degree in
+                      history and political science. Ray co-founded Cryptide
+                      LLC, a cryptocurrency education startup where he assisted
+                      in producing educational content. He also co-founded
+                      HeavyZen LLC, a content creation and management company
+                      that assists projects in content creation, social media
+                      management, and SEO.
                     </p>
                   </div>
                 </div>
@@ -1070,16 +1139,15 @@
                 <div id="signupForm"></div>
               </div>
             </div>
-              <div class="smallnewsletter">
-                <h3>Stay Updated</h3>
-                <div id="signupForm-m"></div>
-              </div> 
+            <div class="smallnewsletter">
+              <h3>Stay Updated</h3>
+              <div id="signupForm-m"></div>
+            </div>
           </section>
-        
+
           <section class="section section--contact">
             <a name="contact"></a>
             <div class="wrapper no-pad">
-              
               <div class="columns">
                 <div class="column">
                   <h3>Community Driven</h3>
@@ -1089,10 +1157,7 @@
                     involved.
                   </p>
                   <p class="welcome-cta">
-                    <a
-                      href="https://t.me/ramifigov"
-                      class="welcome-button"
-                    >
+                    <a href="https://t.me/ramifigov" class="welcome-button">
                       Developer Telegram
                     </a>
                   </p>
@@ -1154,23 +1219,23 @@
               type="text/javascript"
             ></script>
             <script type="text/javascript">
-              twttr.conversion.trackPid('l6c37', {
+              twttr.conversion.trackPid("l6c37", {
                 tw_sale_amount: 0,
                 tw_order_quantity: 0,
-              })
+              });
             </script>
             <noscript>
               <img
                 height="1"
                 width="1"
-                style="display: none;"
+                style="display: none"
                 alt=""
                 src="https://analytics.twitter.com/i/adsct?txn_id=l6c37&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0"
               />
               <img
                 height="1"
                 width="1"
-                style="display: none;"
+                style="display: none"
                 alt=""
                 src="https://t.co/i/adsct?txn_id=l6c37&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0"
               />
@@ -1190,10 +1255,10 @@
           </ul>
 
           <div class="footer-right">
-              <span class="octicon octicon-code"></span>
-              with
-              <span class="octicon octicon-heart"></span>
-              in Austin            
+            <span class="octicon octicon-code"></span>
+            with
+            <span class="octicon octicon-heart"></span>
+            in Austin
           </div>
         </div>
       </div>
