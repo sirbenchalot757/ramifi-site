@@ -4,12 +4,12 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Group', 'Percentage'],
-          ['Ecosystem', 23],
-          ['Team & Advisors', 24],
-          ['Treasury',  22],
-          ['Seed Investors', 16],
-          ['Private Sale', 10],
-          ['Public Sale',  5]
+          ['Ecosystem', 18],
+          ['Team & Advisors', 21],
+          ['Treasury',  18],
+          ['Seed Investors', 6],
+          ['Private Sale', 33],
+          ['Public Sale',  4]
         ]);
 
         var options = {
