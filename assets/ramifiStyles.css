@@ -6296,6 +6296,10 @@ body.menu-active .modal-backdrop {
   background-color: #ffd152;
   color: #343233;
 }
+.roadmap .completed {
+  background-color: #ffd152;
+  color: #343233;
+}
 
 @media (min-width) {
   .responsive-break {
