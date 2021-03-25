@@ -6239,12 +6239,12 @@ body.menu-active .modal-backdrop {
   border-color: #ffd152;
 }
 .chart-items-1 .chart-item:nth-child(5) i {
-  color: #d46e2d;
-  border-color: #d46e2d;
-}
-.chart-items-1 .chart-item:nth-child(6) i {
   color: #61efce;
   border-color: #61efce;
+}
+.chart-items-1 .chart-item:nth-child(6) i {
+  color: #d46e2d;
+  border-color: #d46e2d;
 }
 
 .section--team h3 {
