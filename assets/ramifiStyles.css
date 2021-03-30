@@ -6292,11 +6292,11 @@ body.menu-active .modal-backdrop {
   padding: 15px;
   border: 2px dashed #ffd152;
 }
-.roadmap li:nth-child(1) {
+.roadmap li:nth-child(1,3,5,7,9,11) {
   background-color: #ffd152;
   color: #343233;
 }
-.roadmap .completed {
+.completed {
   background-color: #ffd152;
   color: #343233;
 }
